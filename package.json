@@ -2,6 +2,7 @@
   "name": "ua-pro-app-seed",
   "version": "0.0.0",
   "author": "Ultimate Angular",
+  "description": "Fork by Giorgio Federici to follow the Angular Pro course",
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p",
