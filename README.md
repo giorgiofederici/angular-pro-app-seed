@@ -28,6 +28,7 @@ During the time building this project, you'll need development dependencies of w
 
 1. Download and install [Node.js here](https://nodejs.org/en/download/) for Windows or for Mac.
 2. Install Firebase CLI on the command-line with `npm install -g firebase-tools`
+3. I had an error during the `npm install` command, related to the missing python2.7. I run `npm install --global --production windows-build-tools` to solve the issue.
 
 That's about it for tooling you'll need to run the project, let's move onto the project install.
 
