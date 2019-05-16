@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+
+import { AuthService } from '../../../shared/services/auth/auth.service';
 
 @Component({
     selector: 'register',
@@ -11,14 +14,32 @@ import { FormGroup } from '@angular/forms';
                 <button type="submit">
                     Create account
                 </button>
+                <div class="error" *ngIf="error">
+                    {{ error }}
+                </div>
             </auth-form>
         </div>
     `
 })
 export class RegisterComponent {
-    constructor() {}
 
-    loginUser(event: FormGroup): void {
-        console.log(event.value);
+    error: string;
+
+    constructor(
+        private authService: AuthService,
+        private router: Router
+    ) { }
+
+    async loginUser(event: FormGroup) {
+        const { email, password } = event.value;
+        try {
+            // Await for the Promise to end
+            await this.authService.createUser(email, password);
+            this.router.navigate(['/']);
+            // Done
+        } catch (err) {
+            // Error in Firebase. A custom api could send errors with different formats
+            this.error = err.message;
+        }
     }
 }
