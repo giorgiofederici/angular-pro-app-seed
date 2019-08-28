@@ -3,6 +3,7 @@
 Angular Pro: Final App Seed
 </h1>
 <h4 align="center">Seed app for fitness manager application using Angular v4+ and AngularFire2.</h4>
+<a href="https://fitness-app-38eb4.firebaseapp.com">Go to the live Fitness App</h4>
 
 ---
 
@@ -237,9 +238,9 @@ Here are some [VSCode](https://code.visualstudio.com) snippets I'm using whilst 
 
 There are several resources used inside this project, of which you can read further about to dive deeper or understand in more detail what they are:
 
-* [Angular](https://angular.io)
-* [Firebase Docs](https://firebase.google.com/docs/)
-* [Firebase CLI](https://firebase.google.com/docs/cli/)
-* [AngularFire2 Repo/Docs](https://github.com/angular/angularfire2)
-* [npm](https://www.npmjs.com/)
-* [Webpack](https://webpack.js.org/)
+- [Angular](https://angular.io)
+- [Firebase Docs](https://firebase.google.com/docs/)
+- [Firebase CLI](https://firebase.google.com/docs/cli/)
+- [AngularFire2 Repo/Docs](https://github.com/angular/angularfire2)
+- [npm](https://www.npmjs.com/)
+- [Webpack](https://webpack.js.org/)
