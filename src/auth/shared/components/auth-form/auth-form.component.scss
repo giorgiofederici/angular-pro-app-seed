@@ -32,7 +32,7 @@
       border-color: darken(#1c79b8, 5%);
     }
     &:disabled {
-      opacity: 0.4;
+      opacity: .4;
       cursor: not-allowed;
     }
   }
@@ -46,7 +46,7 @@
 
 .auth-form {
   background: #fff;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 4px rgba(0,0,0,.1);
   border-radius: 3px;
   border: 1px solid #c1cedb;
   width: 400px;
@@ -79,10 +79,10 @@
     &::-webkit-input-placeholder {
       color: #5777a8;
     }
-    &[type="email"] {
+    &[type=email] {
       border-radius: 3px 3px 0 0;
     }
-    &[type="password"] {
+    &[type=password] {
       border-radius: 0 0 3px 3px;
       margin: -1px 0 0;
     }

@@ -25,7 +25,7 @@
   color: #fff;
   background: #d73a49;
   border-radius: 3px;
-  transition: all 0.2s ease-in-out;
+  transition: all .2s ease-in-out;
   &:hover {
     background: darken(#d73a49, 3%);
   }
@@ -139,7 +139,7 @@
       background: darken(#39a1e7, 5%);
     }
     &:disabled {
-      opacity: 0.4;
+      opacity: .4;
       cursor: not-allowed;
     }
     &--cancel {
